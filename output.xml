@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.11 on win32)" generated="20220805 14:09:13.219" rpa="false" schemaversion="3">
+<suite id="s1" name="RobotFrameworks" source="C:\AutoScript\RobotFrameworks">
+<suite id="s1-s1" name="Confluence-Robotframework" source="C:\AutoScript\RobotFrameworks\confluence-robotframework">
+<suite id="s1-s1-s1" name="Src" source="C:\AutoScript\RobotFrameworks\confluence-robotframework\src">
+<suite id="s1-s1-s1-s1" name="Test Cases" source="C:\AutoScript\RobotFrameworks\confluence-robotframework\src\test_cases">
+<suite id="s1-s1-s1-s1-s1" name="Confluence-Search" source="C:\AutoScript\RobotFrameworks\confluence-robotframework\src\test_cases\confluence-search.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Successful search on confluence" line="6">
+<kw name="Given user open the confluence" library="search-keywords-steps">
+<kw name="open the application" library="home-page-object">
+<arg>url=https://confluence.ap.manulife.com/</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${url}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220805 14:09:14.731" level="INFO">Opening browser 'chrome' to base url 'https://confluence.ap.manulife.com/'.</msg>
+<msg timestamp="20220805 14:09:14.738" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220805 14:09:14.738" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20220805 14:09:14.730" endtime="20220805 14:09:14.770"/>
+</kw>
+<status status="FAIL" starttime="20220805 14:09:14.729" endtime="20220805 14:09:14.770"/>
+</kw>
+<status status="FAIL" starttime="20220805 14:09:14.728" endtime="20220805 14:09:14.770"/>
+</kw>
+<kw name="When user search for" library="search-keywords-steps">
+<arg>query=QE Automation Agenda</arg>
+<status status="NOT RUN" starttime="20220805 14:09:14.774" endtime="20220805 14:09:14.774"/>
+</kw>
+<kw name="Then user should find the page" library="search-keywords-steps">
+<arg>title=ID QE Automation Agenda</arg>
+<status status="NOT RUN" starttime="20220805 14:09:14.775" endtime="20220805 14:09:14.775"/>
+</kw>
+<status status="FAIL" starttime="20220805 14:09:14.727" endtime="20220805 14:09:14.777">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<test id="s1-s1-s1-s1-s1-t2" name="Unsuccessful search on confluence" line="11">
+<kw name="Given user open the confluence" library="search-keywords-steps">
+<kw name="open the application" library="home-page-object">
+<arg>url=https://confluence.ap.manulife.com/</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${url}</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220805 14:09:14.784" level="INFO">Opening browser 'chrome' to base url 'https://confluence.ap.manulife.com/'.</msg>
+<msg timestamp="20220805 14:09:14.789" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220805 14:09:14.790" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</msg>
+<status status="FAIL" starttime="20220805 14:09:14.783" endtime="20220805 14:09:14.794"/>
+</kw>
+<status status="FAIL" starttime="20220805 14:09:14.782" endtime="20220805 14:09:14.795"/>
+</kw>
+<status status="FAIL" starttime="20220805 14:09:14.781" endtime="20220805 14:09:14.796"/>
+</kw>
+<kw name="When user search for" library="search-keywords-steps">
+<arg>query=jasndlajwdoasbdoasjdbasdljb</arg>
+<status status="NOT RUN" starttime="20220805 14:09:14.798" endtime="20220805 14:09:14.798"/>
+</kw>
+<kw name="Then user should get no result notification" library="search-keywords-steps">
+<status status="NOT RUN" starttime="20220805 14:09:14.799" endtime="20220805 14:09:14.799"/>
+</kw>
+<status status="FAIL" starttime="20220805 14:09:14.780" endtime="20220805 14:09:14.800">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home
+</status>
+</test>
+<status status="FAIL" starttime="20220805 14:09:13.316" endtime="20220805 14:09:14.805"/>
+</suite>
+<suite id="s1-s1-s1-s1-s2" name="GoogleSearch" source="C:\AutoScript\RobotFrameworks\confluence-robotframework\src\test_cases\GoogleSearch.robot">
+<test id="s1-s1-s1-s1-s2-t1" name="This is sample test case" line="6">
+<kw name="[tags] regression">
+<msg timestamp="20220805 14:09:14.821" level="FAIL">No keyword with name '[tags] regression' found.</msg>
+<status status="FAIL" starttime="20220805 14:09:14.820" endtime="20220805 14:09:14.821"/>
+</kw>
+<kw name="Open Browser https://www.google.com chrome">
+<status status="NOT RUN" starttime="20220805 14:09:14.824" endtime="20220805 14:09:14.825"/>
+</kw>
+<kw name="Close Browser">
+<status status="NOT RUN" starttime="20220805 14:09:14.829" endtime="20220805 14:09:14.829"/>
+</kw>
+<doc>Google Test</doc>
+<status status="FAIL" starttime="20220805 14:09:14.817" endtime="20220805 14:09:14.831">No keyword with name '[tags] regression' found.</status>
+</test>
+<status status="FAIL" starttime="20220805 14:09:14.809" endtime="20220805 14:09:14.834"/>
+</suite>
+<status status="FAIL" starttime="20220805 14:09:13.309" endtime="20220805 14:09:14.839"/>
+</suite>
+<status status="FAIL" starttime="20220805 14:09:13.302" endtime="20220805 14:09:14.842"/>
+</suite>
+<status status="FAIL" starttime="20220805 14:09:13.295" endtime="20220805 14:09:14.846"/>
+</suite>
+<status status="FAIL" starttime="20220805 14:09:13.231" endtime="20220805 14:09:14.850"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="RobotFrameworks">RobotFrameworks</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="Confluence-Robotframework">RobotFrameworks.Confluence-Robotframework</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1-s1" name="Src">RobotFrameworks.Confluence-Robotframework.Src</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1-s1-s1" name="Test Cases">RobotFrameworks.Confluence-Robotframework.Src.Test Cases</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1-s1-s1-s1" name="Confluence-Search">RobotFrameworks.Confluence-Robotframework.Src.Test Cases.Confluence-Search</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s2" name="GoogleSearch">RobotFrameworks.Confluence-Robotframework.Src.Test Cases.GoogleSearch</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
